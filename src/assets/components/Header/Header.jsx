@@ -38,7 +38,7 @@ export default function Header() {
             </div>
 
             <div className="logo">
-                METAVERSUS
+                VIRTUAVERSE
             </div>
 
             {showMenu ? (

@@ -4,7 +4,7 @@ export default function About() {
     return (
         <section className="about">
             <div className="content">
-                <p>About Metaversus</p>
+                <p>About Virtuaverse</p>
 
                 <h2><span>Metaverse</span> is a new thing in the future, where you can enjoy the virtual world by feeling like it's really real, you can feel what you feel in this metaverse world, because this is really the <span>madness of the metaverse</span> of today, using only <span>VR</span> devices you can easily explore the metaverse world you want, turn your dreams into reality. Let's <span>explore</span> the madness of the metaverse by scrolling down</h2>
 
