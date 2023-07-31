@@ -1,0 +1,38 @@
+.enter {
+    display: flex;
+    padding: 1rem 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 200px;
+    background: #1A232E;
+
+
+    h2 {
+        color: #F9F9F9;
+        font-family: var(--primaryFont);
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    button {
+        display: inline-flex;
+        padding: 20px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border: none;
+        border-radius: 32px;
+        background: #25618B;
+        color: #F9F9F9;
+        font-family: var(--primaryFont);
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        padding: 1rem 5%;
+
+        
+    }
+}

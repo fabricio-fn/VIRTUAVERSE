@@ -1,4 +1,7 @@
 import About from "./assets/components/About/About";
+import Enter from "./assets/components/Enter/Enter";
+import Footer from "./assets/components/Footer/Footer";
+import Founder from "./assets/components/Founder/Founder";
 import Header from "./assets/components/Header/Header";
 import Home from "./assets/components/Home/Home";
 import HowWorks from "./assets/components/HowWorks/HowWorks";
@@ -19,6 +22,9 @@ export default function App() {
       <WhatsNew />
       <PeopleOnTheWorld />
       <Insight />
+      <Founder />
+      <Enter />
+      <Footer />
     </>
   )
 }

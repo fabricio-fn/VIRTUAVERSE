@@ -1,0 +1,34 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.70);
+    background: #1A232E;
+
+    h2 {
+        color: #FFF;
+        font-family: var(--primaryFont);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .copyright {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: var(--primaryFont);
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .socials {
+        display: flex;
+        gap: 30px;
+    }
+
+    @media (max-width: 681px) {
+        justify-content: center;
+    }
+}
