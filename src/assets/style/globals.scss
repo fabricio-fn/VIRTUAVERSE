@@ -8,9 +8,15 @@
 }
 
 body {
-    background-color: #080444;
+    background-color: var(--primaryColor);
 }
 
 :root {
     --primaryFont: 'IBM Plex Sans Arabic', sans-serif;
+    --primaryColor: #1A232E;
+    --secondaryColor: #2565E1;
+    --additional-1: #F9F9F9;
+    --additional-2: #C7C7C7;
+    --additional-3: #D225E1;
+    --additional-4: rgba(199, 199, 199, 0.50);
 }

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(0deg, #2565e1 -50%, #1a232e 50%);
+    background-image: linear-gradient(0deg, var(--secondaryColor) -50%, var(--primaryColor) 50%);
     flex-direction: column;
     gap: 30px;
     padding: 1rem 10%;
@@ -14,25 +14,8 @@
         flex-direction: column;
         gap: 30px;
 
-        p {
-            display: flex;
-            align-items: center;
-            height: 14px;
-            border-left: 2px solid rgba(199, 199, 199, 0.5);
-            color: rgba(199, 199, 199, 0.5);
-            font: 500 14px/1 var(--primaryFont);
-            letter-spacing: -0.28px;
-        }
-
         div {
             width: 885px;
-            text-align: center;
-
-            h2 {
-                font: 700 64px/1 var(--primaryFont);
-                color: #fff;
-                letter-spacing: -1.28px;
-            }
         }
     }
 
@@ -62,7 +45,7 @@
                 width: 60px;
                 height: 60px;
                 border-radius: 24px;
-                background: rgba(184, 172, 172, 0.61);
+                background: var(--additional-4);
                 display: none;
                 align-items: center;
                 justify-content: center;
@@ -70,7 +53,7 @@
 
             h3 {
                 display: none;
-                color: #f9f9f9;
+                color: var(--additional-1);
                 font: 500 16px/1 var(--primaryFont);
                 letter-spacing: 0.08px;
                 text-decoration: underline;
@@ -79,16 +62,15 @@
             h2 {
                 writing-mode: vertical-rl;
                 transform: rotate(180deg);
-                color: #f9f9f9;
-                font: 700 32px/1 var(--primaryFont);
-            }
+                color: var(--additional-1);
+                font: 700 32px/1 var(--primaryFont);}
 
             &.cardItem1 {
                 background-image: url("../../public/img/cardItem(1).jpeg");
             }
 
             &.cardItem2 {
-                background-image: url("../../public/img/cardItem(2).svg");
+                background-image: url("../../public/img/cardItem(2).jpeg");
             }
 
             &.cardItem3 {
@@ -132,12 +114,8 @@
     }
 
     @media (max-width: 500px) {
-        .content {
-            div {
-                h2 {
-                    font-size: 32px;
-                }
-            }
+        h2 {
+            text-align: center !important;
         }
 
         .card {

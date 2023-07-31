@@ -7,9 +7,8 @@
     justify-content: space-between;
     padding: 0 10%;
     height: 60px;
-    // background: linear-gradient(90deg, #D225E1 -5%, #2565E1 40%, #1A232E);
-    color: #F9F9F9;
-    // z-index: 999;
+    color: var(--additional-1);
+    z-index: 999;
      
     .search {
         display: flex;
@@ -25,57 +24,30 @@
             width: 150px;
             margin-left: 30px;
             position: absolute;
-            border-bottom: 1px solid #F9F9F9 !important;
+            border-bottom: 1px solid var(--additional-1) !important;
             outline: none;
             border: none;
-            color: #F9F9F9;
+            color: var(--additional-1);
             font-size: 20px;
             background: transparent;
         }
     }
 
     .logo {
-        font-family: var(--primaryFont);
-        color: #F9F9F9;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        font: 700 24px var(--primaryFont);
+        color: var(--additional-1);
     }
 
     nav {
         position: absolute;
         left: 0;
-        margin-top: 540px;
+        margin-top: 520px;
         padding: 1rem;
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        background: linear-gradient(90deg, #D225E1 -5%, #2565E1 40%, #1A232E);
-        
-        a {
-            color: #F9F9F9;
-            font-family: var(--primaryFont);
-            font-weight: 500;
-            text-decoration: none;
-            padding: 1rem 0;
-        }
-
-        .btnHeader {
-            display: inline-flex;
-            padding: 20px 32px;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            border: none;
-            border-radius: 32px;
-            background: #25618B;
-            color: #F9F9F9;
-            font-family: var(--primaryFont);
-            font-weight: 500;
-            cursor: pointer;
-        }
+        background: linear-gradient(90deg, var(--additional-3) -5%, var(--secondaryColor) 40%, var(--primaryColor));
     }
 
     .btnMenu {
@@ -91,5 +63,13 @@
         .logo {
             display: none;
         }
+
+        nav > .btnHeader {
+            padding: 10px 16px;
+        }
     }
+}
+
+.backgroundHeader, .fixedHeader {
+    background: linear-gradient(90deg, var(--additional-3) -5%, var(--secondaryColor) 40%, var(--primaryColor));
 }

@@ -1,11 +1,13 @@
+import TitleSection from "../TitleSection/TitleSection"
+import Section from "../Section/Section"
 import InsightData from "./InsightData"
 import "./insight.scss"
 
 export default function Insight() {
     return (
-        <section className="insight">
-            <p>Insight</p>
-            <h2>Insight about metaverse</h2>
+        <section id="insight" className="insight">
+            <Section text="Insight" />
+            <TitleSection title="Insight about metaverse" />
 
             <div className="card">
                 {InsightData.map((item, index) => (

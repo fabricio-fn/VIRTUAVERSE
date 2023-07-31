@@ -1,0 +1,17 @@
+.btn {
+    display: inline-flex;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    border-radius: 32px;
+    background: var(--secondaryColor);
+    color: var(--additional-1);
+    font: 500 var(--primaryFont);
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        padding: 10px 16px;
+    }
+}

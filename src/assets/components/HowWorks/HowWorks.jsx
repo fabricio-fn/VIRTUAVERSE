@@ -1,15 +1,17 @@
+import Section from "../Section/Section"
+import TitleSection from "../TitleSection/TitleSection"
 import "./howworks.scss"
 
 export default function HowWorks() {
     return (
-        <section className="howworks">
+        <section id="howmetaverseworks" className="howworks">
             <div className="img">
                 <img src="/img/planet-11.svg" alt="" srcset="" />
             </div>
 
             <div className="content">
-                <p>How Metaverse Works</p>
-                <h2>Get started with just a few clicks</h2>
+                <Section text="How Metaverse Works" />
+                <TitleSection title="Get started with just a few clicks" />
 
                 <div>
                     <span>01</span>

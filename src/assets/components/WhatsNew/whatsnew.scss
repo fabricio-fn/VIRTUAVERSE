@@ -5,52 +5,32 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 10%;
-    background-image: linear-gradient(45deg, #2565e1 -50%, #1a232e 50%);
-    
+    background-image: linear-gradient(40deg, var(--secondaryColor) -50%, var(--primaryColor) 50%);
+
     .img {
         display: flex;
         align-items: center;
         height: 500px;
-        
+
         img {
             height: 500px;
         }
     }
-    
+
     .content {
         width: 471px;
         display: flex;
         flex-direction: column;
         gap: 20px;
         
-    
-        p {
-            display: flex;
-            align-items: center;
-            height: 14px;
-            border-left: 2px solid rgba(199, 199, 199, 0.50);
-            color: rgba(199, 199, 199, 0.50);
-            font-family: var(--primaryFont);
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: -0.28px;
-        }
-    
         h2 {
-            color: #FFF;
-            font-family: var(--primaryFont);
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
-            letter-spacing: -1.28px;
-
+            text-align: start !important;
         }
-    
+
         .new {
             display: flex;
             gap: 30px;
-            
+
             div {
                 gap: 15px;
                 display: flex;
@@ -61,36 +41,24 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: #FFF;
-                    font-family: var(--primaryFont);
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
+                    color: var(--additional-1);
+                    font: 700 20px/1 var(--primaryFont);
                     width: 70px;
                     height: 70px;
                     flex-shrink: 0;
                     border-radius: 24px;
-                    background: rgba(255, 255, 255, 0.08);
+                    background: var(--additional-4);
                     backdrop-filter: blur(24px);
                 }
 
                 h2 {
-                    color: #FFF;
-                    font-family: var(--primaryFont);
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
+                    color: var(--additional-1);
+                    font: 700 24px/1 var(--primaryFont);
                 }
-        
+
                 h3 {
-                    color: #B0B0B0;
-                    // width: 334px;
-                    font-family: var(--primaryFont);
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 180%;
+                    color: var(--additional-2);
+                    font: 400 18px/1.8 var(--primaryFont);
                 }
             }
         }
@@ -100,11 +68,11 @@
         padding: 1rem 5%;
         flex-direction: column-reverse;
 
-        img, .content {
+        img,
+        .content {
             width: 100%;
 
             & h2 {
-                font-size: 32px;
                 width: 100%;
             }
         }

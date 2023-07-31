@@ -1,11 +1,13 @@
+import TitleSection from "../TitleSection/TitleSection"
+import Section from "../Section/Section"
 import "./whatsnew.scss"
 
 export default function WhatsNew() {
     return (
-        <section className="whatsnew">
+        <section id="whatsnew" className="whatsnew">
             <div className="content">
-                <p>Whats New?</p>
-                <h2>What's new about Virtuaverse?</h2>
+                <Section text="Whats New?" />
+                <TitleSection title="What's new about Virtuaverse?" />
 
                 <div className="new">
                     <div>

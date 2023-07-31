@@ -1,3 +1,5 @@
+import Section from "../Section/Section"
+import TitleSection from "../TitleSection/TitleSection"
 import { cardItems } from "./cardItems";
 import "./theworld.scss";
 import { useState } from "react";
@@ -12,9 +14,9 @@ export default function TheWorld() {
     return (
         <section id="theworld" className="theworld">
             <div className="content">
-                <p>The World</p>
+                <Section text="The World" />
                 <div>
-                    <h2>Choose the world you want to explore</h2>
+                    <TitleSection title="Choose the world you want to explore" />
                 </div>
             </div>
 

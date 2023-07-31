@@ -5,7 +5,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 10%;
-    background-image: linear-gradient(180deg, #2565e1 -50%, #1a232e 50%);
+    background-image: linear-gradient(180deg, var(--secondaryColor) -50%, var(--primaryColor) 50%);
     
     .img {
         display: flex;
@@ -21,61 +21,33 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-    
-        p {
-            display: flex;
-            align-items: center;
-            height: 14px;
-            border-left: 2px solid rgba(199, 199, 199, 0.50);
-            color: rgba(199, 199, 199, 0.50);
-            font-family: var(--primaryFont);
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: -0.28px;
-        }
+        text-align: center;
     
         h2 {
-            color: #FFF;
-            font-family: var(--primaryFont);
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
-            letter-spacing: -1.28px;
-            width: 471px;
+            width: 471px !important;
         }
     
         div {
             gap: 30px;
             display: flex;
             align-items: center;
-
     
             span {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #FFF;
-                font-family: var(--primaryFont);
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                color: var(--additional-1);
+                font: 700 20px/70px var(--primaryFont);
                 width: 70px;
                 height: 70px;
-                flex-shrink: 0;
                 border-radius: 24px;
-                background: rgba(255, 255, 255, 0.08);
-                backdrop-filter: blur(24px);
+                background: var(--additional-4);
             }
     
             h3 {
-                color: #B0B0B0;
+                color: var(--additional-2);
                 width: 334px;
-                font-family: var(--primaryFont);
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 180%;
+                font: 400 18px/180% var(--primaryFont);
             }
         }
     }
@@ -87,8 +59,7 @@
             width: 100%;
 
             & h2 {
-                font-size: 32px;
-                width: 100%;
+                width: 100% !important;
             }
         }
     }

@@ -1,0 +1,11 @@
+.titlesection {
+    color: var(--additional-1);
+    font: 700 64px/120% var(--primaryFont);
+    letter-spacing: -1.28px;
+    text-align: center;
+
+    @media(max-width: 500px) {
+        font-size: 32px;
+        text-align: start !important;
+    }
+}

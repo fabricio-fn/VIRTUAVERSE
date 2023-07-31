@@ -5,7 +5,7 @@
     gap: 30px;
     min-height: 100vh;
     padding: 1rem 10%;
-    background-image: linear-gradient(150deg, #D225E1 -50%, #1A232E 50%);
+    background-image: linear-gradient(160deg, var(--additional-3) -50%, var(--primaryColor) 50%);
 
     .content {
         display: flex;
@@ -15,41 +15,26 @@
         padding: 1.5rem;
         width: 360px;
         height: 500px;
-        flex-shrink: 0;
         border-radius: 32px;
-        border: 1px solid #6A6A6A;
-        // background: linear-gradient(180deg, #d125e14d 0%, #cccccc00 60%);
+        border: 1px solid var(--additional-4);
 
         div {
             h2 {
-                color: #FFF;
-                font-family: var(--primaryFont);
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: -0.64px;
+              color: var(--additional-1);
+              font: 700 32px var(--primaryFont);
             }
-
+      
             span {
-                color: #FFF;
-                font-family: var(--primaryFont);
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-                letter-spacing: -0.36px;
-                color: #FFF;
+              color: var(--additional-1);
+              font: 300 18px var(--primaryFont);
+              letter-spacing: -0.36px;
             }
         }
 
         p {
-            font-family: var(--primaryFont);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
+            font: 500 24px var(--primaryFont);
             letter-spacing: -0.48px;
-            color: #FFF;
+            color: var(--additional-1);
         }
     }
 
@@ -65,6 +50,9 @@
     @media(max-width: 768px) {
         padding: 1rem 5%;
         flex-direction: column;
+    }
+
+    @media(max-width: 972px) {
 
         .content, .img {
             width: 100%;
